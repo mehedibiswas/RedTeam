@@ -3,4 +3,4 @@
 python3 -c 'import pty; pty.spawn("/bin/bash");'
 
 
-then we need to set "TERM=xterm" to execute the previous shell 
+then we need to set  "export TERM=xterm" to execute the previous shell 
