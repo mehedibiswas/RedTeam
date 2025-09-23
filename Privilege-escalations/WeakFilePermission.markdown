@@ -30,14 +30,14 @@ daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 
 In /etc/passwd file we can see the something like that.
 
-Field by field (colon : separates them):
-root → Username
-x → Password placeholder (real password hash is stored in /etc/shadow)
-0 → User ID (UID) → 0 = superuser
-0 → Group ID (GID) → 0 = root group
-root → Comment / GECOS field (user description)
-/root → Home directory
-/usr/bin/zsh → Login shell (here it’s Zsh, not the usual /bin/bash)
+- Field by field (colon : separates them):
+- root → Username
+- x → Password placeholder (real password hash is stored in /etc/shadow)
+- 0 → User ID (UID) → 0 = superuser
+- 0 → Group ID (GID) → 0 = root group
+- root → Comment / GECOS field (user description)
+- /root → Home directory
+- /usr/bin/zsh → Login shell (here it’s Zsh, not the usual /bin/bash)
 #### If we remove the x that's mean there is no password for that users.
 
 
