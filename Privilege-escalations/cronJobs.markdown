@@ -8,6 +8,12 @@ If we see any suspious file, we can justify if this file is used for cronjobs or
 
 ##### ls -al
 which make all the permision and time who is owner of that file(chance for root),when the file last executed or modified.
+##### What to do after suspious file or cronjob found.
+i.We need to see if the file has write or read permission.If write permission is possible we implant a reverse shell.
+ii.We need to find out the actual location of that suspious file.We can check the environment variables to check 
+where the file is.If we found any suspious file in envirnoment variable which execution priority low.We can create a duplicate file of the same name and store it in a envirnment variables which has higher exection priority.
+##### find / -type f -name backup.sh 2>/dev/null
+The above command is used to find file in whole system.
 
 #### pspy
 pspy is a github tool is used to make a list of the process is running.All cron jobs are run after a period of time.
