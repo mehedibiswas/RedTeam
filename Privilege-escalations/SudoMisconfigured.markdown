@@ -8,7 +8,7 @@ After finding these binaries we need to use 'GTFOBins" website to find useful co
 #### Env-variables
 We can take advantages of environment variables.
 
-### NOte
+### Note
 It is not necessary always have to be root.Sometimes others user also have some permission we can take advantages of 
 these.
 
